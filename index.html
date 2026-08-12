@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Advanced Login Page</title>
+  <title>Cyber Login Page</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      background: linear-gradient(135deg, #001f3f, #00ff99); /* deep blue to neon green */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -16,18 +16,20 @@
     }
 
     .login-container {
-      background: #fff;
+      background: rgba(0, 0, 0, 0.85);
       padding: 40px;
       border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      box-shadow: 0 0 25px rgba(0,255,153,0.6);
       width: 350px;
       animation: fadeIn 1.2s ease-in-out;
+      color: #00ff99;
     }
 
     .login-container h2 {
       text-align: center;
       margin-bottom: 20px;
-      color: #333;
+      color: #00e6e6; /* cyan-blue */
+      text-shadow: 0 0 8px #00ff99;
     }
 
     .form-group {
@@ -38,26 +40,28 @@
       display: block;
       font-weight: bold;
       margin-bottom: 6px;
-      color: #444;
+      color: #00e6e6;
     }
 
     .form-group input {
       width: 100%;
       padding: 12px;
-      border: 1px solid #ccc;
+      border: 1px solid #00ff99;
       border-radius: 8px;
+      background: #001f3f;
+      color: #00ff99;
       transition: 0.3s;
     }
 
     .form-group input:focus {
-      border-color: #6a11cb;
-      box-shadow: 0 0 8px rgba(106,17,203,0.4);
+      border-color: #00e6e6;
+      box-shadow: 0 0 12px #00ff99;
       outline: none;
     }
 
     .password-policy {
       font-size: 12px;
-      color: #666;
+      color: #00e6e6;
       margin-top: -10px;
       margin-bottom: 10px;
     }
@@ -65,17 +69,20 @@
     .btn {
       width: 100%;
       padding: 12px;
-      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      background: linear-gradient(135deg, #00ff99, #00e6e6);
       border: none;
       border-radius: 8px;
-      color: #fff;
+      color: #001f3f;
       font-size: 16px;
+      font-weight: bold;
       cursor: pointer;
       transition: 0.3s;
+      text-shadow: 0 0 5px #000;
     }
 
     .btn:hover {
-      background: linear-gradient(135deg, #2575fc, #6a11cb);
+      background: linear-gradient(135deg, #00e6e6, #00ff99);
+      box-shadow: 0 0 15px #00ff99;
     }
 
     @keyframes fadeIn {
@@ -86,7 +93,7 @@
 </head>
 <body>
   <div class="login-container">
-    <h2>Welcome Back</h2>
+    <h2>Cyber Access</h2>
     <form>
       <div class="form-group">
         <label for="username">Username</label>
